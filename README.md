@@ -1,185 +1,112 @@
 # **💧 Water Quality Prediction using Machine Learning**
 
-This project predicts whether water is safe (potable) or unsafe for drinking using Machine Learning classification algorithms. It analyzes water quality based on physicochemical properties and builds an automated classification system.
+## 📌 Overview
+This project applies machine learning classification algorithms to predict water quality based on chemical and physical parameters. By analyzing a cleaned dataset and training models such as Support Vector Machine (SVM), the project aims to classify water samples as safe or unsafe for consumption.
 
-📌 Project Overview
+## 🎯 Objectives
 
-Access to safe drinking water is essential for public health. Traditional laboratory testing methods are accurate but:
+- Preprocess and clean raw water quality data
 
-⏳ Time-consuming
+- Perform feature engineering and visualization
 
-💰 Expensive
+- Train and evaluate multiple classification models
 
-👨‍🔬 Require skilled professionals
+- Save and deploy the best-performing model (water_quality_svm_model.pkl)
 
-To solve this, we developed a Machine Learning-based system that predicts water potability efficiently and accurately.
+- Provide reproducible workflows via Jupyter Notebook
 
-🎯 Objectives
+## 📂 Repository Structure
+Code
+├── Major Project 1.ipynb          # Jupyter Notebook with full workflow
+├── Major Project-1 Report.pdf     # Detailed project report
+├── water_quality_clean_dataset.csv # Cleaned dataset used for training
+├── water_quality_svm_model.pkl    # Trained SVM model
+├── LICENSE                        # License file
+└── README.md                      # Project documentation
+# 🛠️ Tech Stack
+**Language**s: Python
 
-Understand water quality indicators
+**Libraries**: pandas, numpy, matplotlib, seaborn, scikit-learn
 
-Perform Exploratory Data Analysis (EDA)
+**Tools**: Jupyter Notebook, GitHub
 
-Preprocess dataset (missing values, scaling, imbalance)
+# 📊 Workflow
+**1.Data Preprocessing**
 
-Train multiple ML models
+    Handle missing values
+    
+    Encode categorical features
+    
+    Normalize numerical features
 
-Compare performance
+**2.Exploratory Data Analysis (EDA)**
 
-Select best model
+    Visualize distributions and correlations
+    
+    Identify key features affecting water quality
 
-Build Final Prediction Pipeline
+**3.Model Training**b
 
-Save and deploy the model
+    Algorithms tested: Logistic Regression, Decision Tree, Random Forest, SVM
+    
+    Hyperparameter tuning for optimal performance
 
-📂 Dataset
+**4.Model Evaluation**
 
-Source: Kaggle – Water Potability Dataset
-Dataset contains 3276 samples with 10 features:
+    Metrics: Accuracy, Precision, Recall, F1-score
+    
+    Confusion matrix visualization
 
-Feature	Description
-pH	Acidity level of water
-Hardness	Water hardness minerals
-Solids	Total dissolved solids
-Chloramines	Disinfectant level
-Sulfate	Sulfate presence
-Conductivity	Electrical conductivity
-Organic Carbon	Organic contamination
-Trihalomethanes	Chemical compounds
-Turbidity	Water clarity
-Potability	0 = Unsafe, 1 = Safe
-🛠️ Tech Stack
+**5.Deployment**
 
-Python
+    Save trained model as .pkl
+    
+    Ready for integration into applications
 
-Pandas
+## 📈 Results
+**Best Model:** Support Vector Machine (SVM)
 
-NumPy
+**Performance:** Achieved high accuracy and balanced precision/recall on test data
 
-Matplotlib / Seaborn
+## 🚀 How to Run
+1.Clone the repository:
 
-Scikit-Learn
+bash
+git clone https://github.com/ashishraj-hub/Water-Quality-Test-using-Classification-Algorithms.git
 
-XGBoost
+2.Navigate to the project folder:
 
-Joblib
+bash
+cd Water-Quality-Test-using-Classification-Algorithms
 
-🧪 Exploratory Data Analysis
+3.Install dependencies:
 
-✔ Checked missing values
-✔ Analyzed feature distributions
-✔ Studied class imbalance
-✔ Understood correlation patterns
-
-Median imputation was used for missing values due to outliers.
-
-🔧 Data Preprocessing
-
-Handled missing values
-
-Feature scaling using StandardScaler
-
-Train-Test Split (80-20)
-
-Stratified sampling applied
-
-🤖 Machine Learning Models Trained
-
-Logistic Regression
-
-Decision Tree
-
-Random Forest
-
-Support Vector Machine (SVM)
-
-XGBoost
-
-📊 Model Evaluation Metrics
-
-Accuracy
-
-Precision
-
-Recall
-
-F1 Score
-
-Confusion Matrix
-
-ROC Curve
-
-ROC-AUC Score
-
-🏆 Best Model
-✔ Final Selected Model: Support Vector Machine (SVM)
-🔥 Reason:
-
-Highest Accuracy
-
-Highest Precision
-
-Highest ROC-AUC Score
-
-Best separation between safe & unsafe water
-
-Stable performance
-
-🚀 Final Prediction Pipeline
-
-Pipeline includes:
-
-StandardScaler
-
-SVM Model
-
-Model Export using Joblib
-
-Prediction function for new data input
-
-🧑‍💻 How to Run the Project
-1️⃣ Clone the Repository
-git clone https://github.com/your-username/water-quality-ml.git
-cd water-quality-ml
-
-2️⃣ Install Dependencies
+bash
 pip install -r requirements.txt
 
-3️⃣ Run the Notebook / Script
-jupyter notebook
+4.Open the Jupyter Notebook:
 
+bash
+jupyter notebook Major\ Project\ 1.ipynb
 
-or
+## 📜 License
+This project is licensed under the MIT License – see the LICENSE file for details.
 
-python main.py
+## 🙌 Acknowledgements
 
-📁 Project Deliverables
+Open-source libraries and datasets
 
-✔ Clean Processed Dataset
-✔ Trained ML Model
-✔ Jupyter Notebook
-✔ Project Report
-✔ PPT Presentation
+Mentors and peers for valuable feedback
 
-🚧 Future Improvements
-
-Use SMOTE for class balancing
-
-Deploy using Flask/Streamlit
-
-Integrate IoT sensors for real-time monitoring
-
-Improve recall for potable water cases
-
-✅ Results
+## ✅ Results
 
 Machine Learning successfully predicts water quality and supports safer decision-making to protect public health.
 
-🙌 Acknowledgements
+## 🙌 Acknowledgements
 
 Dataset Source: Kaggle – Water Potability Dataset
 
-🧑‍🎓 Developer
+## 🧑‍🎓 Developer
 
-Ashish Raj
+**Ashish Raj**
 Machine Learning & Data Science Enthusiast
